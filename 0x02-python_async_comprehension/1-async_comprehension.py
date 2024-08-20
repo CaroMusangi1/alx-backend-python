@@ -5,9 +5,6 @@ Coroutine that collects random numbers using async comprehension.
 from typing import List
 from importlib import import_module
 
-''' 
-Dynamically importing async_generator from the previous module
-'''
 async_generator = import_module('0-async_generator').async_generator
 
 async def async_comprehension() -> List[float]:
